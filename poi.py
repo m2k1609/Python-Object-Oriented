@@ -95,103 +95,103 @@
 
 
 
-class School:
-    school_name = "howtoberich"
+# class School:
+#     school_name = "howtoberich"
     
-    def __init__(self, name, number, type, students):
-        self.name = name
-        self.number = number
-        self.type = type
-        self.students = students
-
-    def get_students(self):
-      
-        return f"This school has {self.students} number of students"
-    
-    def get_school_type(self):
-        
-        return f"This is a {self.type} school"
-    
-    def get_school_number(self):
-        a = int(input("What is the school number? "))
-        return f"We are now accessing school number {a}"
-    
-    def add_student(self):
-        b = int(input("How many students would you like to add? "))
-        self.students=b + self.students
-        if b <= 0:
-            print("You can't add zero or negative students!")
-        else:
-            return f"We are adding {b} students to the school"
-    
-    def remove_student(self):
-        c = int(input("How many students are leaving? "))
-        self.students=self.students - c
-        if c > self.students:
-            print("You can't remove more students than you have!")
-        else:
-            return f"We are removing {c} students from the school"
-
-# Create a school instance
-my_school = School("howtoberich", 123, "high school", 5000)
-
-print(my_school.school_name)
-print(my_school.get_students())
-print(my_school.add_student())
-print(my_school.get_students())
-print(my_school.remove_student())
-print(my_school.get_students())
-
-print(my_school.get_school_type())
-print(my_school.get_school_number())
-
-
-
-# class Student:
-#     school_name = "Purdue University"
-    
-#     def __init__(self, name, student_id, major, grade):
+#     def __init__(self, name, number, type, students):
 #         self.name = name
-#         self.student_id = student_id
-#         self.major = major
-#         self.grade = grade
-    
-#     def get_major(self):
-        
-#         return f"You are studying {self.major}"
-    
-#     def get_student_id(self):
+#         self.number = number
+#         self.type = type
+#         self.students = students
+
+#     def get_students(self):
       
-#         return f"We are now accessing student ID {self.student_id}"
+#         return f"This school has {self.students} number of students"
     
-#     def add_grade(self):
-#         grade = int(input("What grade did you receive? "))
-#         self.grade = self.grade + grade
-#         if self.grade < 0 or self.grade > 100:
-#             print("Invalid grade! Grade must be between 0 and 100")
-#         else:
-#             return f"Adding grade {grade} to your record"
-    
-#     def check_grade(self):
+#     def get_school_type(self):
         
-#         if self.grade < 60:
-#             print("You're failing, study harder!")
-#         else:
-#             return f"Your current grade is {self.grade}"
+#         return f"This is a {self.type} school"
     
-#     def enroll_course(self):
-#         course = input("What course would you like to enroll in? ")
-#         return f"You have enrolled in {course}"
+#     def get_school_number(self):
+#         a = int(input("What is the school number? "))
+#         return f"We are now accessing school number {a}"
+    
+#     def add_student(self):
+#         b = int(input("How many students would you like to add? "))
+#         self.students=b + self.students
+#         if b <= 0:
+#             print("You can't add zero or negative students!")
+#         else:
+#             return f"We are adding {b} students to the school"
+    
+#     def remove_student(self):
+#         c = int(input("How many students are leaving? "))
+#         self.students=self.students - c
+#         if c > self.students:
+#             print("You can't remove more students than you have!")
+#         else:
+#             return f"We are removing {c} students from the school"
+
+# # Create a school instance
+# my_school = School("howtoberich", 123, "high school", 5000)
+
+# print(my_school.school_name)
+# print(my_school.get_students())
+# print(my_school.add_student())
+# print(my_school.get_students())
+# print(my_school.remove_student())
+# print(my_school.get_students())
+
+# print(my_school.get_school_type())
+# print(my_school.get_school_number())
 
 
-# student1 = Student("Mohammad Khan", 12345, "Computer Science", 0)
 
-# print(student1.school_name)
-# print(student1.get_major())
-# print(student1.get_student_id())
-# print(student1.add_grade())
-# print(student1.check_grade())
-# print(student1.enroll_course())
+class Student:
+    school_name = "Purdue University"
+    
+    def __init__(self, name, student_id, major, grade):
+        self.name = name
+        self.student_id = student_id
+        self.major = major
+        self.grade = grade
+    
+    def get_major(self):
+        
+        return f"You are studying {self.major}"
+    
+    def get_student_id(self):
+      
+        return f"We are now accessing student ID {self.student_id}"
+    
+    def add_grade(self):
+        grade = int(input("What grade did you receive? "))
+        self.grade = self.grade + grade
+        if self.grade < 0 or self.grade > 100:
+            print("Invalid grade! Grade must be between 0 and 100")
+        else:
+            return f"Adding grade {grade} to your record"
+    
+    def check_grade(self):
+        
+        if self.grade < 60:
+            print("You're failing, study harder!")
+        else:
+            return f"Your current grade is {self.grade}"
+    
+    def enroll_course(self):
+        course = input("What course would you like to enroll in? ")
+        return f"You have enrolled in {course}"
+
+
+student1 = Student("Mohammad Khan", 12345, "Computer Science", 0)
+
+print(student1.school_name)
+print(student1.get_major())
+print(student1.get_student_id())
+print(student1.add_grade())
+print(student1.check_grade())
+print(student1.enroll_course())
 
 
 
